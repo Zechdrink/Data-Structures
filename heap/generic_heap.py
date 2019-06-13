@@ -13,7 +13,7 @@ class Heap:
     pass
 
   def get_size(self):
-    pass
+    return len(self.storage)
 
   def _bubble_up(self, index):
     pass
