@@ -1,4 +1,5 @@
 import unittest
+import math
 from unittest.mock import MagicMock
 from max_heap import Heap
 
@@ -9,7 +10,7 @@ class HeapTests(unittest.TestCase):
   def test_heap_insert_works(self):
     self.heap.insert(6)
     self.heap.insert(8)
-    self.heap.insert(10)
+    self.heap.insert(10)  
     self.heap.insert(9)
     self.heap.insert(1)
     self.heap.insert(9)
@@ -39,7 +40,7 @@ class HeapTests(unittest.TestCase):
     self.heap.insert(9)
     self.heap.insert(5)
     self.heap.delete()
-    self.assertEqual(self.heap.get_max(), 9)
+    self.assertEqual(self.heap.get_max(), 9)  
     self.heap.delete()
     self.assertEqual(self.heap.get_max(), 9)
     self.heap.delete()
